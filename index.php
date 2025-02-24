@@ -132,7 +132,7 @@ function mostrarEstructura($id_padre = null)
         </div>
     </div>
 
-    <script src="../GESTION DOCUMENTOS/index.js"></script>
+    <script src="../GESTION DOCUMENTOS/principal.js"></script>
     <!-- <script src="../GESTION DOCUMENTOS/ajax.js"></script> -->
 </body>
 

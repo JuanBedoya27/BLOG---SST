@@ -1,0 +1,204 @@
+
+/* Estilos generales de la cartilla */
+#contenido-principal.cartilla {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 2px solid #d3d3d3;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-image: url('https://www.transparenttextures.com/patterns/diagonal-stripes-light.png');
+    background-size: cover;
+    top: 100px;
+}
+
+/* Estilo de los títulos */
+h1 {
+    font-size: 32px;
+    color: #0066cc;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #0077cc;
+    margin-top: 20px;
+}
+
+/* Estilo de los párrafos */
+p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Estilo para las listas */
+.cartilla ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cartilla ul li {
+    background-color: #e9f5ff;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+ul li strong {
+    color: #0077cc;
+}
+
+ul li svg {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+/* Botones de selección */
+.menu button {
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 5px;
+}
+
+.menu button:hover {
+    background-color: #005bb5;
+}
+
+.menu button:focus {
+    outline: 3px solid #ff9800;
+}
+
+/* Estilo para las secciones */
+.seccion {
+    display: none;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Mensaje importante */
+.mensaje-importante {
+    background-color: #fff3e0;
+    padding: 15px;
+    border-left: 5px solid #ff9800;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff9800;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* Enlaces */
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.section {
+    display: none;
+}
+
+.section img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding:    0px;
+    background-color: #f7f7f7;
+}
+
+.menu {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.menu button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.menu button:hover {
+    background-color: #0056b3;
+}
+
+/* Diseño responsive */
+@media (max-width: 1024px) {
+    #contenido-principal.cartilla {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .menu button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    #contenido-principal.cartilla {
+        top: 100px;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .menu button {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+}
+

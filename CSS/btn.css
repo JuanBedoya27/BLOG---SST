@@ -1,0 +1,35 @@
+
+.indice button {
+    position: relative;
+    background-color: #007BFF; /* Color principal */
+    border: none;
+    border-radius: 8px;
+    padding: 20px 40px; /* Tamaño más grande */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 10px; /* Espacio entre botones */
+    top: 100px;
+}
+
+.indice a button {
+    text-decoration: none;
+    color: white; /* Color del texto */
+    font-size: 18px; /* Tamaño del texto más grande */
+    font-weight: bold;
+}
+
+.indice button:hover {
+    background-color: #0056b3; /* Color al pasar el mouse */
+    transform: scale(1.05);
+}
+
+.indice button a:hover {
+    color: #d1eaff; /* Color del texto al pasar el mouse */
+}
+@media (max-width: 600px) {
+    .indice button {
+        flex: 1 1 100%; /* Se ajusta al 100% del ancho en pantallas pequeñas */
+        padding: 15px 20px;
+        margin: 10px 0; /* Ajuste para espacio vertical */
+    }
+}

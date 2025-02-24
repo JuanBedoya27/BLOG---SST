@@ -1,0 +1,245 @@
+/* Estilos generales */
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background 1s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #333333;
+}
+
+/* Contenedor del formulario */
+.login-container {
+    background: rgba(255, 255, 255, 0.95); /* Fondo blanco con opacidad */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    transition: all 0.3s ease; /* Transiciones suaves */
+}
+
+/* Hover sobre el contenedor */
+.login-container:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+    transform: scale(1.05); /* Efecto de ampliación */
+}
+
+/* Título */
+h2 {
+    font-size: 1.8em;
+    color: #007aff; /* Azul institucional */
+    margin-bottom: 20px;
+}
+
+/* Labels */
+label {
+    display: block;
+    text-align: left;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #444; /* Gris oscuro para las etiquetas */
+}
+
+/* Inputs */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: all 0.3s ease; /* Transiciones suaves */
+}
+
+/* Efecto al enfocar los inputs */
+input[type="text"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border-color: #007aff; /* Borde azul */
+    box-shadow: 0 0 8px rgba(0, 122, 255, 0.5); /* Sombra azul al enfocar */
+}
+
+/* Botón de inicio de sesión */
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background: #007aff; /* Fondo azul */
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Transiciones suaves */
+}
+
+/* Efecto hover en el botón */
+input[type="submit"]:hover {
+    background: #005bb5; /* Azul más oscuro */
+    transform: translateY(-2px); /* Efecto de elevación */
+}
+
+/* Mensajes de error */
+.error {
+    color: #ff3b3b; /* Rojo para errores */
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 600px) {
+    .login-container {
+        width: 90%; /* 90% de ancho en pantallas pequeñas */
+    }
+}
+
+/* Estilos para el header */
+.header {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 100px; /* Tamaño del logo ajustado */
+    height: auto;
+    margin-right: 15px;
+}
+
+/* Efectos adicionales para el contenedor del formulario */
+.login-container {
+    background-color: rgba(255, 255, 255, 0.95); /* Fondo claro */
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más sutil */
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transiciones */
+}
+
+/* Efecto de hover */
+.login-container:hover {
+    transform: scale(1.05); /* Efecto de ampliación */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+}
+
+/* Título */
+h2 {
+    margin-bottom: 25px;
+    font-family: 'Arial', sans-serif;
+    font-size: 2em;
+    color: #007aff; /* Azul institucional */
+}
+
+/* Estilo para las etiquetas */
+label {
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+    font-weight: bold;
+    color: #333333; /* Gris oscuro para las etiquetas */
+}
+
+/* Estilo de los inputs */
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #ffffff; /* Fondo blanco */
+    color: #333333; /* Color oscuro para el texto */
+    transition: box-shadow 0.3s ease, background-color 0.3s ease; /* Transiciones */
+}
+
+/* Estilo al enfocar los inputs */
+input[type="text"]:focus, input[type="password"]:focus {
+    outline: none;
+    background-color: #ffffff; /* Fondo blanco */
+    box-shadow: 0 0 10px rgba(0, 122, 255, 0.9); /* Sombra azul */
+}
+
+/* Estilo del botón de submit */
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #007aff; /* Fondo azul */
+    border: none;
+    border-radius: 4px;
+    color: #ffffff; /* Texto blanco */
+    font-weight: bold;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; /* Transiciones */
+}
+
+/* Efecto hover del botón */
+input[type="submit"]:hover {
+    background-color: #005bb5; /* Azul más oscuro */
+    color: #ffffff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra más suave */
+    transform: translateY(-2px); /* Elevación */
+}
+
+/* Mensajes de error */
+.error {
+    color: #ff3b3b;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Carrusel de fondo */
+.carousel-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.carousel {
+    display: flex;
+    width: 300%;
+    height: 100%;
+    transition: transform 1s ease-in-out;
+}
+
+.carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Estilos responsivos */
+@media (min-width: 768px) {
+    .login-container {
+        width: 60%; /* 60% de ancho en pantallas medianas */
+    }
+}
+
+@media (min-width: 1024px) {
+    .login-container {
+        width: 400px; /* 400px de ancho en pantallas grandes */
+    }
+}

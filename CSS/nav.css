@@ -1,0 +1,71 @@
+/* Resalta el enlace activo */
+nav a {
+    color: #333;
+    text-decoration: none;
+}
+
+nav a:focus,
+nav a:hover {
+    color: #007bff;
+}
+
+nav a.active {
+    color: #fff;
+    background-color: #007bff;
+    font-weight: bold;
+}
+
+.back-button {
+    display: block;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}
+
+.logout-button {
+    position: relative;
+    padding: 10px 20px;
+    background-color: #ff4d4d;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    top: 100px;
+    right: 20px;
+}
+
+.logout-button:hover {
+    background-color: #cc0000;
+}
+
+/* Estilos para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .logout-button {
+        position: static;
+        margin-top: 10px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Estilos para pantallas aún más pequeñas */
+@media (max-width: 480px) {
+    .logout-button {
+        padding: 10px;
+        font-size: 16px;
+    }
+}
+ 
+
+
+

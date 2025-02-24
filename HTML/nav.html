@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../GESTION DOCUMENTOS/CSS/style.css">
+    <link rel="stylesheet" href="../../GESTION DOCUMENTOS/CSS/nav.css">
+    <link rel="icon" href="../Escudo_de_El_Carmen_de_Viboral.png" type="image/png">
+</head>
+
+<body>
+    <header>
+        <label class="hamburger">
+            <input type="checkbox" onclick="toggleMenu()" />
+            <svg viewBox="0 0 32 32">
+                <path class="line line-top-bottom"
+                    d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+                </path>
+                <path class="line" d="M7 16 27 16"></path>
+            </svg>
+        </label>
+        <nav>
+            <ul>
+                <li><a href="../../GESTION DOCUMENTOS/index.php" id="documentos"
+                        aria-label="Ir a la sección Documentos">SG-SST</a></li>
+                <li><a href="../../GESTION DOCUMENTOS/HTML/induccion.php" id="induccion"
+                        aria-label="Ir a la sección Inducción">Inducción</a></li>
+                <li><a href="../../GESTION DOCUMENTOS/HTML/re_induccion.php" id="reinduccion"
+                        aria-label="Ir a la sección Reinducción">Reinducción</a></li>
+                <li><a href="../../GESTION DOCUMENTOS/HTML/cartilla.php">Seguridad Vial</a></li>
+            </ul>
+            <a href="../../GESTION DOCUMENTOS/logout.php" class="logout-button">Cerrar Sesión</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="logo-container">
+            <img class="logo"
+                src="https://www.elcarmendeviboral-antioquia.gov.co/sites/elcarmendeviboralantioquia/content/files/001180/58988_logo-alcaldia-el-carmen-de-viboral--300x300px2_200x200.png"
+                alt="Logo">
+            <img class="logo" src="../../GESTION DOCUMENTOS/img/Logo.png" alt="Logo">
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('nav ul');
+            nav.classList.toggle('active');
+        }
+
+        // Obtener la URL actual
+        const currentLocation = window.location.pathname;
+
+        // Obtener todos los enlaces de navegación
+        const navLinks = document.querySelectorAll('nav a');
+
+        // Iterar sobre todos los enlaces para comparar la URL 
+        navLinks.forEach(link => {
+            // Obtener solo el final del href (ruta relativa)
+            const linkPath = new URL(link.href).pathname;
+
+            // Comparar rutas relativas
+            if (currentLocation === linkPath) {
+                // Si hay una coincidencia, agregar la clase 'active' al enlace
+                link.classList.add('active');
+            } else {
+                // Si no, quitar la clase 'active'
+                link.classList.remove('active');
+            }
+        });
+
+        
+    </script>
+</body>
+
+</html>
